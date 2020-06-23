@@ -13,6 +13,7 @@ Presentation Link :-
 https://drive.google.com/file/d/1cT4p6yzzZH48j7GHyykEofdxDn5XHajM/view?usp=sharing
 
 
-TECH STACK 
 
+BUISNESS VALUE
 
+This Project will find out the ratings of each product category with and without vine user. The output of my project will be a Interactive dashboard in Tableau where Amazon personnel can clearly see the difference in between considering vine users.
