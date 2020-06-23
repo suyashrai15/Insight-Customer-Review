@@ -1,1 +1,24 @@
+Steps tp connect Athena with Tableau
 
+Install the latest version of 64-bit Java.
+Get the driver (download here).
+Place the driver:
+Windows: Save the Amazon Athena JDBC jar in the C:\Program Files\Tableau\Drivers location.
+Mac: Save the Amazon Athena JDBC jar in the ~/Library/Tableau/Drivers location.
+Restart Tableau.
+Once these steps are completed, you can add a new Amazon Athena connection and begin configuring it.
+
+There are a few interesting things to note about the connection dialog for Amazon Athena. The lack of an SSL checkbox is not an indicator for a lack of support. In fact, Amazon Athena uses SSL all the time, so be sure to specify port 443.
+
+
+
+The remainder of the dialog is straight-forward. For the advanced users among us, here’s the nitty-gritty:
+
+Server: athena.region.amazon.com
+for example, Athena.us-west-2.amazonaws.com
+Port: 443
+SSL by default
+Amazon S3 Staging Directory: Find this setting in the AWS console for Amazon Athena.
+AWS calls this property “Query Result Location”
+Username/Password: Access Key ID and Secret Access Key
+Access Key ID and Secret Access Key associated with the IAM user you are logging in as
