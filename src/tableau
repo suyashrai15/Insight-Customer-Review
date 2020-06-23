@@ -1,1 +1,5 @@
+Create a dahboard and create a calculated field "Vine User".
 
+IF [Vine] == 'Y' Then "YES"
+ELSEIF [Vine] == 'N' Then "NO"
+ELSE '0' END
